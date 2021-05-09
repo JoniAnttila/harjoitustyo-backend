@@ -10,7 +10,7 @@ $id = $parameters[1];
 try{
     $db=opendb(); 
 
-    $sql="SELECT id, fname, lname, password from user WHERE id = $id ";
+    $sql="SELECT id, fname, lname, email from user WHERE id = $id ";
 
     jsonFactory($db, $sql); 
 
